@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    tools:ignore="RtlHardcoded,ContentDescription"
+    tools:context=".activities.HomeActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_upper">
+
+
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="6dp"
+            android:layout_height="24dp"
+            android:src="@drawable/more_options_icons"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29.5dp"/>
+        
+        <TextView android:id="@+id/tvDisplayName"
+            style="@style/TitleVideoHome"
+            android:layout_width="wrap_content"
+
+            android:text="Eternal Life"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="22dp"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/LabelCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="69.5dp"
+            android:text="\ufeff@masterbuilder" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:id="@+id/ivAvatar1"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:id="@+id/ivAvatar2"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:id="@+id/ivAvatar3"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView android:id="@+id/ivShare"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tvShare"
+        android:layout_marginBottom="3.5dp"
+        android:src="@drawable/share_icon"/>
+
+
+    <TextView android:id="@+id/tvShare"
+        style="@style/LabelCaption"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="#66000000"
+        android:shadowDx="1.2246467991473532e-16"
+        android:shadowDy="2"
+        android:text="1234"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/ivComment"
+        android:layout_marginBottom="36dp"
+        android:shadowRadius="1.96"
+        android:gravity="center"/>
+
+    <ImageView android:id="@+id/ivComment"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tvComment"
+        android:layout_marginBottom="3.5dp"
+        android:src="@drawable/comment_icon"/>
+
+
+    <TextView android:id="@+id/tvComment"
+        style="@style/LabelCaption"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="#66000000"
+        android:shadowDx="1.2246467991473532e-16"
+        android:shadowDy="2"
+        android:text="1234"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/ivLike"
+        android:layout_marginBottom="36dp"
+        android:shadowRadius="1.96"
+        android:gravity="center"/>
+
+    <ImageView android:id="@+id/ivLike"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tvLike"
+        android:layout_marginBottom="3.5dp"
+        android:src="@drawable/like_icon"/>
+
+    <TextView android:id="@+id/tvLike"
+        style="@style/LabelCaption"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="#66000000"
+        android:shadowDx="1.2246467991473532e-16"
+        android:shadowDy="2"
+        android:text="1234"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/rlBottomBar"
+        android:layout_marginBottom="18dp"
+        android:shadowRadius="1.96"
+        android:gravity="center"/>
+
+   <include layout="@layout/panel_bottom_bar"/>
+
+</RelativeLayout>

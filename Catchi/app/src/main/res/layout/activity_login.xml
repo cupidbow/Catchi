@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    tools:ignore="RtlHardcoded,ContentDescription"
+    tools:context=".activities.LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="31dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.3"
+        android:layout_height="wrap_content">
+    <com.envisability.catchi.views.CatchiTextView
+        style="@style/BrandingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:gravity="center"
+
+        auto:customFont="BackToBlack.ttf"
+        />
+    </FrameLayout>
+
+    <ImageView android:id="@+id/ivClear"
+        android:layout_width="28.5dp"
+        android:layout_height="28.5dp"
+        android:layout_above="@+id/etEmail"
+        android:src="@drawable/clear_x_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16.5dp" />
+
+    <EditText android:id="@+id/etEmail"
+        style="@style/Heading1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:drawableBottom="@drawable/password_line"
+        android:layout_above="@+id/etPassword"
+        android:layout_marginBottom="30.5dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="43.5dp"
+        android:textColor="@color/white_87"
+        android:textColorHint="@color/white_87"/>
+
+    <EditText android:id="@+id/etPassword"
+        style="@style/Heading1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:drawableBottom="@drawable/password_line"
+        android:layout_above="@+id/tvEnter"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="43.5dp"
+        android:textColor="@color/white_87"
+        android:textColorHint="@color/white_87"/>
+
+
+
+    <TextView android:id="@+id/tvEnter"
+        style="@style/ButtonText"
+
+        android:layout_width="match_parent"
+        android:layout_height="56.5dp"
+        android:text="@string/enter"
+        android:layout_above="@+id/llSocials"
+        android:gravity="center"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="15.5dp"
+        android:layout_marginRight="16.5dp"
+        android:background="@drawable/cyan_button"
+        />
+    
+    <LinearLayout android:id="@+id/llSocials"
+
+        android:layout_width="match_parent"
+        android:layout_above="@+id/tvForgot"
+        android:paddingLeft="15.5dp"
+        android:paddingRight="16.5dp"
+        android:paddingBottom="18dp"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvFacebook"
+            style="@style/ButtonText"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="56.5dp"
+            android:text="@string/facebook"
+            android:gravity="center"
+            android:background="@drawable/blue_button" />
+
+        <View
+            android:layout_width="12.5dp"
+            android:layout_height="match_parent"/>
+
+        <TextView android:id="@+id/tvGoogle"
+            style="@style/ButtonText"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="56.5dp"
+            android:text="@string/google"
+            android:gravity="center"
+            android:background="@drawable/red_button" />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvForgot"
+        style="@style/Heading1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_something"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10.5dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    
+
+
+
+</RelativeLayout>

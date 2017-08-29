@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#b3222222"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="20dp"
+            android:src="@drawable/arrow"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vEditTextLine"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/appBar"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginRight="16.5dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/input_title_line"/>
+
+    <EditText
+        android:id="@+id/etCatchi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        style="@style/Heading2"
+        android:background="@null"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="22dp"
+        android:maxLines="1"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginRight="16.5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCatchi"
+        android:text="@string/name_your_catchi"
+        style="@style/NameYourVideoLabel"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginRight="16.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <com.envisability.catchi.views.SelectedCatchiView
+        android:id="@+id/scCatchies"
+        android:layout_below="@+id/vEditTextLine"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:layout_height="65dp"/>
+
+    <TextView
+        android:id="@+id/tvInvite"
+        android:background="@drawable/invite_button"
+        style="@style/InviteButtonCyan"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="invite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scCatchies"
+        />
+
+    <View
+        android:id="@+id/vSearchLine"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/tvInvite"
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginRight="16.5dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/input_title_line"/>
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:alpha="0.6"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvInvite"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/search_icon"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:background="@null"
+        android:hint="@string/find_people"
+        style="@style/SearchingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivSearch"
+        android:layout_marginLeft="6.5dp"
+        android:layout_alignRight="@+id/vSearchLine"
+        android:layout_alignBottom="@+id/ivSearch"/>
+
+    <ScrollView
+        android:layout_marginLeft="16.5dp"
+        android:layout_marginRight="16.5dp"
+        android:layout_below="@+id/vSearchLine"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rwOnline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="20dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rwOffline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

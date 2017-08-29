@@ -1,0 +1,301 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#242424</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/cyan_100</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+
+    <style name="AppThemeWithoutStatusBar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppThemeTransparent" parent="AppThemeWithoutStatusBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="BrandingName">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">70.3sp</item>
+        <item name="android:textColor">@color/white__30_logo</item>
+    </style>
+    <style name="ButtonPost">
+        <item name="android:textSize">25.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-7.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="ButtonText">
+        <item name="android:textSize">25.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-7.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="PostVideoOption">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">25.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-7.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="ProcessingStyle">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-3sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="InviteButton">
+        <item name="android:textSize">20.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">-2.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="InviteButtonCyan">
+        <item name="android:textSize">20.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">-2.5sp</item>
+        <item name="android:textColor">@color/cyan_87</item>
+    </style>
+    <style name="ProfileMainName">
+        <item name="android:textSize">20.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-2.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="TimerLabel">
+        <item name="android:textSize">20.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-2.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="TitleVideoHome">
+        <item name="android:textSize">20.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">-2.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="LabelSendMessage">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="InitialsBarney">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/barney_87</item>
+    </style>
+    <style name="InitialsPurple">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/purple_87</item>
+    </style>
+    <style name="WriteTextChat">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="MediumStyle">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="ChatStyle">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="MediumStyleFaded">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="Heading1">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="Heading1Center">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="InitialsBlue">
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:textColor">@color/blue_87</item>
+    </style>
+    <style name="FollowersInfo">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">@color/cyan_87</item>
+    </style>
+    <style name="Heading2">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="SearchingLabel">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColorHint">@color/white__54</item>
+
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="DialogOptions">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">@color/cyan_87</item>
+    </style>
+    <style name="InfoText">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="DefaultInfo">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">@color/cyan_87</item>
+    </style>
+    <style name="AlbumName">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="SelectedPicture">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="NetworkLabels">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="NameYourVideoLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="UsernameCaption">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="Description2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="Description1">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="LabelCaption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="TimelineTimerlabel">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="AlertCaptionCyan">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+        <item name="android:textColor">@color/cyan__54</item>
+    </style>
+    <style name="AlertCaption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+    <style name="SmallestLogotext">
+        <item name="android:textSize">9sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white_87</item>
+    </style>
+    <style name="PostingTimeLabel">
+        <item name="android:textSize">8sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textColor">@color/white__54</item>
+    </style>
+
+</resources>

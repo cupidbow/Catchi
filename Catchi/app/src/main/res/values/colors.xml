@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="cyan_87">#de15bbcf</color>
+    <color name="white_87">#deffffff</color>
+    <color name="white_100">#ffffff</color>
+    <color name="white__54">#8affffff</color>
+    <color name="barney_100">#b71d93</color>
+    <color name="blue_100">#1776ff</color>
+    <color name="purple_100">#471fb5</color>
+    <color name="very_dark_grey">#222222</color>
+    <color name="cyan_100">#ff15bbcf</color>
+    <color name="blue_87">#de1776ff</color>
+    <color name="barney_87">#deb71d93</color>
+    <color name="purple_87">#de471fb5</color>
+    <color name="white__30_logo">#4cffffff</color>
+    <color name="black">#000000</color>
+    <color name="cyan__54">#8a15bbcf</color>
+</resources>

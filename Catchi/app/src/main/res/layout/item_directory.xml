@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="90dp"
+    android:background="@color/very_dark_grey"
+    android:gravity="center"
+    android:layout_height="120dp">
+
+    <FrameLayout
+        android:layout_width="87.5dp"
+        android:layout_height="96dp">
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="87.5dp"
+        android:scaleType="centerCrop"
+        android:layout_height="96dp" />
+
+    <ImageView
+        android:src="@drawable/selection_1"
+        android:layout_width="87.5dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivSelection"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="9dp"
+        style="@style/AlbumName"
+        android:text="Camera roll"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

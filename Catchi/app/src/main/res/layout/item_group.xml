@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="73dp">
+
+    <ImageView
+        android:id="@id/ivAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/avatar"/>
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        style="@style/PostingTimeLabel"
+        android:text="2 sec ago"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivMoreOptions"
+        android:padding="6dp"
+        android:layout_width="16dp"
+        android:layout_height="28.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="2.5dp"
+        android:src="@drawable/more_options_icons"/>
+
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/tvTitle"
+        android:maxLines="1"
+        style="@style/Heading2"
+        android:layout_marginTop="21.5dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:text="you, the man, montanial, jaques"/>
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/tvLastMessage"
+        style="@style/Description2"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivAvatar"
+        android:text="you, the man, montanial, jaques"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/divider"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1px" />
+
+</RelativeLayout>

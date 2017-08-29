@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded,ContentDescription"
+    android:id="@+id/rlBottomBar"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="29dp"
+        android:layout_height="24.5dp"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="23dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16.5dp"
+        android:src="@drawable/home_icon"/>
+
+    <ImageView
+        android:id="@+id/ivAddPeople"
+        android:layout_width="32dp"
+        android:layout_height="20.5dp"
+        android:scaleType="centerInside"
+        android:layout_marginRight="40.5dp"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/ivCamera"
+        android:src="@drawable/add_people_icon"/>
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/camera_icon"/>
+
+    <RelativeLayout
+        android:id="@+id/rlInbox"
+        android:layout_width="38.5dp"
+        android:layout_toRightOf="@id/ivCamera"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="39.5dp"
+        android:layout_height="28dp">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="36.5dp"
+            android:src="@drawable/inbox_icon"
+            android:layout_height="15.5dp" />
+        <TextView
+            android:layout_width="18.5dp"
+            android:layout_height="18.5dp"
+            style="@style/LabelCaption"
+            android:text="2"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/badge"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/profile_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25.5dp"
+        android:layout_marginTop="16.5dp"/>
+
+</RelativeLayout>

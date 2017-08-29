@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Catchi</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="enter">ENTER</string>
+    <string name="forgot_something"><u>forgot something?</u></string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
+    <string name="facebook_app_id">133224990573758</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="email_blank">Email Cannot Be Blank</string>
+    <string name="incorrect_password">Incorrect Password</string>
+    <string name="email_not_registered">This Email is Not Registered</string>
+    <string name="password_blank">Password Field Cannot Be Empty</string>
+    <string name="email_format">Bad Email Format </string>
+    <string name="auth_failed">Authentication Failed</string>
+
+    <string name="ok">OK</string>
+    <string name="report">report</string>
+    <string name="block">block</string>
+    <string name="choose_a_reason_for_reporting_this_post">choose a reason for reporting this post</string>
+    <string name="innappropiate_language">innappropiate language</string>
+
+    <string name="groups">groups</string>
+    <string name="invites">invites</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="videos">Videos</string>
+    <string name="select_pictures">select pictures</string>
+    <string name="name_your_catchi">Name your Catchi</string>
+    <string name="find_people">find people</string>
+</resources>

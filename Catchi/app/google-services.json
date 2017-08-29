@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "843687905965",
+    "firebase_url": "https://catchi-81382.firebaseio.com",
+    "project_id": "catchi-81382",
+    "storage_bucket": "catchi-81382.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843687905965:android:5c5de2a16502dd58",
+        "android_client_info": {
+          "package_name": "com.envisability.catchi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843687905965-jbdrhf8p57uqr9ksj228qpg0p6khfe0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcnGIgUMN6de0VbMjznZnn5DhLIYO2yo8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

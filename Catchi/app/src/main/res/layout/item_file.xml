@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:padding="1.5dp"
+    android:background="@color/very_dark_grey">
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:scaleType="centerCrop"
+        android:layout_width="82dp"
+        android:layout_height="82dp" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/selection_1"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:id="@+id/ivSelection"/>
+
+    <ImageView
+
+        android:src="@drawable/play_button"
+        android:padding="25dp"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:id="@+id/ivVideo"/>
+    
+    <TextView
+        android:id="@+id/tvSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:background="@drawable/badge1"
+        style="@style/SelectedPicture"
+        android:text="0"
+        android:minWidth="16dp"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

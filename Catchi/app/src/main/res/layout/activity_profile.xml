@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded,ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activities.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTopView"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_bg"
+        android:layout_height="292dp">
+        <LinearLayout
+            android:id="@+id/llAppBar"
+            android:layout_width="match_parent"
+            android:background="@color/very_dark_grey"
+            android:alpha="0.87"
+            android:layout_height="55.5dp">
+            <TextView
+                style="@style/ProfileMainName"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fiorella Smith"
+                android:layout_marginTop="18.5dp"
+                android:layout_marginLeft="22.5dp"/>
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="17.5dp"
+                android:layout_height="17.5dp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="29.5dp"
+                android:src="@drawable/search_icon"/>
+
+            <ImageView
+                android:id="@+id/ivOptions"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginRight="14dp"
+                android:layout_width="17.5dp"
+                android:layout_height="17.5dp"
+                android:src="@drawable/more_options_icon"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16.4dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlAvatarPlace"
+            android:layout_width="137.5dp"
+            android:layout_height="137.5dp"
+            android:layout_below="@+id/llAppBar"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/profile_bg"
+            >
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_pic"/>
+
+            <ImageView
+                android:id="@+id/ivTakePicture"
+                android:layout_height="27dp"
+                android:layout_width="96dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/camera_on_profile"/>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etUserName"
+            style="@style/MediumStyle"
+
+            android:layout_below="@+id/llAppBar"
+            android:layout_marginTop="19.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:background="@null"
+            android:layout_width="180.5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ivUserName"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/llAppBar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15.5dp"
+            android:layout_marginTop="19.5dp"
+            android:src="@drawable/edit_icon_1"/>
+
+        <View
+            android:id="@+id/sepUsername"
+            android:layout_width="196.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:layout_alignRight="@+id/ivUserName"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/etUserName"
+            android:background="@drawable/white_line_1"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:id="@+id/etAbout"
+            style="@style/InfoText"
+            android:lines="4"
+            android:lineSpacingExtra="-1dp"
+            android:gravity="top"
+            android:layout_below="@+id/etUserName"
+            android:layout_marginTop="19.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:background="@null"
+            android:layout_width="180.5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ivAbout"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/etAbout"
+            android:layout_marginRight="15.5dp"
+            android:src="@drawable/edit_icon_2"/>
+
+        <View
+            android:id="@+id/sepAbout"
+            android:layout_width="196.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:layout_alignRight="@+id/ivAbout"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/etAbout"
+            android:background="@drawable/white_line_1"
+            android:layout_height="0.5dp"/>
+
+
+        <EditText
+            android:id="@+id/etMail"
+            style="@style/InfoText"
+            android:layout_below="@+id/etAbout"
+            android:layout_marginTop="19.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:background="@null"
+            android:layout_width="180.5dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ivMail"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/etMail"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15.5dp"
+
+            android:src="@drawable/edit_icon_3"/>
+
+        <View
+            android:id="@+id/sepEmail"
+            android:layout_width="196.5dp"
+            android:layout_marginLeft="8.5dp"
+            android:layout_toRightOf="@+id/rlAvatarPlace"
+            android:layout_alignRight="@+id/ivMail"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/etMail"
+            android:background="@drawable/white_line_1"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/etMail"
+            android:layout_alignRight="@id/ivMail"
+            android:layout_below="@+id/etMail"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="16.4dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/Heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    style="@style/FollowersInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followers"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/Heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    style="@style/FollowersInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/following"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/Heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    style="@style/FollowersInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/videos"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/rlTopView"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+
+    <include layout="@layout/panel_bottom_bar"/>
+
+</RelativeLayout>
